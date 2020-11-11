@@ -6,7 +6,8 @@ defmodule Fizzbuzz do
   end
 
   defp handle_file_read({:ok, result}) do
-    result = result
+    result =
+      result
       |> String.replace("\n", "")
       |> String.split(",")
       |> Enum.map(&convert_and_evaluate/1)

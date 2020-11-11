@@ -1,21 +1,23 @@
 # Fizzbuzz
 
-**TODO: Add description**
+## How to Use
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `fizzbuzz` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:fizzbuzz, "~> 0.1.0"}
-  ]
-end
+#### Compile the Code
+```bash
+$ mix compile
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/fizzbuzz](https://hexdocs.pm/fizzbuzz).
+#### Run iex with compiled app
+```bash
+$ iex -S mix
+```
 
+#### Run the Module
+```elixir
+Fizzbuzz.build("numbers.txt")
+```
+
+#### Test the code
+```bash
+$ mix test
+```
